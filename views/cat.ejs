@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>cat</title>
+</head>
+
+<body>
+
+    <% if(cat){%>
+        <h1>Rare Cats in the world </h1>
+        <div class="card">
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="inner-skew">
+                        <img src=<%=cat.img %>>
+                    </div>
+                </div>
+            </div>
+            <div class="title-container ">
+                <h1 class="title">
+                    <%= cat.name %>
+                </h1>
+                <h3 class="author">
+                    <%= cat.age %>
+                </h3>
+                <div class="discription">
+                    <%= cat.description %>
+                </div>
+            </div>
+        </div>
+
+        <% } %>
+
+</body>
+
+</html>
